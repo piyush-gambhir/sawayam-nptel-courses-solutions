@@ -1,0 +1,9 @@
+Troublesort(L):
+    let done = false
+    while not done:
+        done = true
+        for i = 0; i < len(L) - 2; i++:
+            if L[i] > L[i+2]:
+                done = false
+                swap(L[i], L[i+2])  # or reverse sublist from L[i] to L[i+2], inclusive
+    return L
